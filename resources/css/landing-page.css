@@ -1,0 +1,387 @@
+/* font-family: 'Nunito', sans-serif; */
+/* font-family: 'Arsenal', sans-serif; */
+/* font-family: 'Changa', sans-serif; */
+/* font-family: 'Slabo 13px', serif; */
+
+/*
+   culori pentru pagina principala a site-ului, la citire, sa fie cat mai odihnitor pentru ochi
+      
+   background-color: #1D1F21;
+   color: #767676;
+*/
+
+
+/*----------------------------------*/
+/*-------- GLOBAL STYLES -----------*/
+/*----------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #f7f7f7;
+    color: #333;
+    font-family: 'Slabo 13px', serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    line-height: 25px;
+    font-size: 100%;
+    font-family: 'Slabo 13px', serif;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    background-color: #E9EBEE;
+}
+
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+
+/*--------------------------------------*/
+/*-------- TOP BAR / HEADER ------------*/
+/*--------------------------------------*/
+
+#landing-page {
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(rgba(30, 62, 77, 0.50), rgba(17, 17, 17, 0.95)), url('../../resources/img/hero.jpg') center center fixed no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+#top-bar {
+    width: 100%;
+    height: 100px;
+    background: radial-gradient(rgba(30, 62, 77, 0.99), rgba(17, 17, 17, 0.99)), url() center center fixed no-repeat;
+    text-align: center;
+    padding: 15px 0;
+    
+    -webkit-box-shadow: 0px 4px 8px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 8px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 12px -4px rgba(0,0,0,0.75);
+}
+
+/*----------------------------------------*/
+/*----------------- LOGO -----------------*/
+/*----------------------------------------*/
+.logo-box {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.logo-box img {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    height: 43px;
+    margin: 0 auto;
+    padding: 3px 14px;
+    text-align: center;
+}
+
+.logo-box:after {
+    display: block;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(217, 217, 217, 0), rgba(217, 217, 217, 0.75), rgba(217, 217, 217, 0));
+    content: " ";
+    width: 180px;
+    margin: 0 auto;
+    margin-top: 3px;
+}
+
+.slogan {
+    font-family: 'Slabo 13px', sans-serif;
+    font-size: 70%;
+    font-weight: 300;
+    text-transform: capitalize;
+    margin-top: 0px;
+    color: #D9D9D9;
+}
+
+
+/*---------------------------------------------------------------------------*/
+/*-- TOP RIGHT SIDE HAMBURGER MENU BUTTON THAT TRIGGERS THE SLIDE OUT MENU---*/
+/*---------------------------------------------------------------------------*/
+#menu-btn {
+    position: absolute;
+    top: 1.5em;
+    right: 2em;
+    width: 40px;
+    cursor: pointer;
+    z-index: 9999999;
+}
+
+#menu-btn div {
+    height: 2px;
+    background: #d9d9d9;
+    margin: 5px 0;
+    border-radius: 24px;
+    transition: .3s;
+}
+
+.one {
+    
+    width: 35px;
+}
+
+.two {
+    width: 15px;
+}
+
+.three {
+    width: 25px;
+}
+
+#menu-btn:hover div {
+    width: 40px;
+}
+
+.meniu {
+    color: #d9d9d9;
+    font-family: 'Arsenal', sans-serif;
+    font-weight: 400;
+}
+
+
+
+/*------------------------------------------------------------*/
+/*-- BODYs LANDING PAGE / HERO TEXT + CALL TO ACTION BUTTON --*/
+/*------------------------------------------------------------*/
+
+/*----------------------------------*/
+/* ----------- HERO TEXT ---------- */
+.hero-text-box {
+    line-height: normal;
+    text-align: center;
+    margin: auto;
+}
+
+h1 {
+    margin: 0;
+    color: #d9d9d9;
+    font-family: 'Arsenal', sans-serif;
+    font-weight: 200;
+    text-shadow: 3px 2px 2px #555;
+    text-transform: capitalize;
+    font-size: 170%;
+    line-height: 1.6em;
+    margin-bottom: 35px;
+}
+
+br.break {
+    display: none;
+}
+
+
+/*----------------------------------------------*/
+/* ----------- CALL TO ACTION BUTTON ---------- */
+
+.call-to-action-btn {
+    margin: 0 auto;
+    padding-top: 2.7em;
+}
+
+.call-to-action-btn a {
+    border-radius: 3px;
+    color: #333;
+    background-color: #d9d9d9;
+    transition: 0.3s;
+    text-decoration: none;
+    letter-spacing: 0.3px;
+    font-size: 110%;
+    font-family: 'Changa', sans-serif;
+    font-weight: 200;
+    margin: 0 2px;
+    padding: 4px 10px;
+}
+
+.call-to-action-btn a:hover {
+    border-radius: 3px;
+    transition: 0.3s;
+    padding: 4px 30px;
+    color: #333;
+    background-color: #d9d9d9;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0));
+}
+
+
+
+/*------------------------------------------------------------*/
+/*---------------- SLIDE OUT MENU / ASIDE --------------------*/
+/*------------------------------------------------------------*/
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100vh;
+    z-index: 9999;
+    background: radial-gradient(rgba(30, 62, 77, 0.99), rgba(17, 17, 17, 0.99));
+    background-color: rgba(0,0,0, 0.8);
+    text-align: center;
+    border-radius: 3px;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: 0.8s;
+}
+
+/*--------------------------------------------------------*/
+/* show-hide the side-menu when hamburger menu is pressed */
+
+.reveal {
+    left: 0;
+}
+
+/*------------------------------------------------------*/
+/*----------- Side Menu Head /  Book Name -----------*/
+
+.book-name {
+    width: 100%;
+    margin: 0 auto;
+    height: 100px;
+    background: radial-gradient(rgba(30, 62, 77, 0.99), rgba(17, 17, 17, 0.99));
+    z-index: 99999;
+    text-align: center;
+}
+
+.book-name h2 {
+    width: 100%;
+    height: 100px;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-family: 'Nunito', serif;
+    font-weight: 200;
+    font-size: 120%;
+    line-height: 1.3em;
+    color: #c9c7cd;
+    letter-spacing: 1px;
+    text-align: center;
+    background: rgba(0,0,0,0.3);
+}
+
+.book-name a {
+    text-decoration: none;
+    color: #b3b3b3;
+    cursor: default;
+}
+
+.book-name a:hover {
+    text-decoration: none;
+}
+
+
+/*-------------------------------------------*/
+/*---- Side Menu Body / Chapters of Book ----*/
+
+
+.book-chapters {
+    width: 100%;
+    height: 80vh;
+    max-height: 80vh;
+    overflow: auto;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 100px;
+    
+}
+
+/* Book Chapters List Items */
+
+.book-chapters li {
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    display: block;
+}
+
+.book-chapters li a {
+    text-decoration: none;
+    display: block;
+    line-height: 1.25em;
+}
+
+small.chapter {
+    font-family: 'Arsenal', sans-serif;
+    font-size: 58%;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    padding: 1px 25px;
+    color: #7d7d7d;
+}
+
+.book-chapters li h3 {
+    font-size: 85%;
+    color: #b3b3b3;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    text-transform: capitalize;
+    padding: 1px 25px;
+}
+
+.book-chapters li h3:after {
+    display: block;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(217, 217, 217, 0.75), rgba(217, 217, 217, 0.35), rgba(217, 217, 217, 0));
+    content: " ";
+    width: 260px;
+    margin: 0 auto;
+    color: rgb(211, 84, 0);
+    margin-top: 5px;
+}
+
+.book-chapters li:hover {
+    transition: 0.3s;
+    background-color: rgba(0,0,0, 0.5);
+    opacity: 0.9;
+}
+
+
+.book-chapters li:hover small,
+.book-chapters li:hover>a h3 {
+    transition: 0.5s;
+}
+
+
+/* 
+color: forestgreen;
+color: seagreen;
+*/
+
+/*-----------------------------------*/
+/*------- Side Menu Scrollbar -------*/
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 50px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #a7a3ad;
+    border-radius: 10px;
+    cursor: pointer;
+}

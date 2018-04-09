@@ -1,0 +1,50 @@
+/* MEDIA QUERIES */
+
+
+
+/****************/
+/* LANDING PAGE */
+/****************/
+
+@media only screen and (min-width: 481px) and (max-width: 610px) {
+    .hero-text {
+    font-size: 155%;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    br.hide {
+        display: none;
+    }
+    br.break{
+        display: block;
+    }
+    .hero-text {
+        font-size: 150%;
+        line-height: 1.4em;
+    }
+}
+
+@media only screen and (max-width: 403px) {
+    br.hide {
+        display: none;
+    }
+    br.break {
+        display: block;
+    }
+    .hero-text {
+        font-size: 140%;
+    }
+    #menu-btn {
+        position: absolute;
+        top: 1.5em;
+        right: 0.9em;
+        width: 40px;
+        cursor: pointer;
+        z-index: 9999999;
+    }
+}
+
+
+
